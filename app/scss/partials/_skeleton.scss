@@ -34,14 +34,6 @@
 /*highlight*/
 .secondaryColour {background-color: $secondaryColour;}
 
-/*for "Don't" boxes*/
-.negativeColour {background-color: $negativeColour;}
-
-/*borders*/
-.borderColour {border-color: $lineColour;}
-
-/*body links*/
-.moreInfoLinkColour {color: $moreInfoLinkColour;}
 
 
 /* for smallest devices -------------------------------------*/
@@ -131,6 +123,22 @@
 .moreInfoLink {
   text-decoration: underline;
 }
+
+/* Sizing for menu page picture box */
+
+.picturebox {
+  background: mainColour;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  margin-top: 30px;
+}
+.picturebox img {max-height: 350px; max-width: 350px;
+}
+
+
+
+
 
 /* Modals */
 

@@ -1,9 +1,6 @@
 @charset "UTF-8";
 /*main*/
-/*borders*/
 /*highlight*/
-/*for "Don't" boxes*/
-/*body links*/
 .container {
   position: relative;
   width: 100%;
@@ -140,11 +137,11 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*main*/
 .mainColour {
-  background-color: #CAE8E5; }
+  background-color: #E0EEF7; }
 
 /*highlight*/
 .secondaryColour {
-  background-color: #dcf0ee; }
+  background-color: #f4f9fc; }
 
 /* for smallest devices -------------------------------------*/
 .homeLink {

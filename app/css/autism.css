@@ -146,18 +146,6 @@
 .secondaryColour {
   background-color: #f4ede2; }
 
-/*for "Don't" boxes*/
-.negativeColour {
-  background-color: #f0e7d7; }
-
-/*borders*/
-.borderColour {
-  border-color: #E68B5A; }
-
-/*body links*/
-.moreInfoLinkColour {
-  color: #403118; }
-
 /* for smallest devices -------------------------------------*/
 .homeLink {
   display: block;
@@ -245,6 +233,18 @@ img.titleFlexChild {
 
 .moreInfoLink {
   text-decoration: underline; }
+
+/* Sizing for menu page picture box */
+.picturebox {
+  background: mainColour;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  margin-top: 30px; }
+
+.picturebox img {
+  max-height: 350px;
+  max-width: 350px; }
 
 /* Modals */
 /* Javascript Modal -----------------
