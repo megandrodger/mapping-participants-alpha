@@ -1,0 +1,26 @@
+{
+  "name": "access-needs-poster",
+  "version": "1.0.0",
+  "description": "\"accessible posters\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/megandrodger/access-needs-poster.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/megandrodger/access-needs-poster/issues"
+  },
+  "homepage": "https://github.com/megandrodger/access-needs-poster#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.2"
+  }
+}
