@@ -34,6 +34,14 @@
 /*highlight*/
 .secondaryColour {background-color: $secondaryColour;}
 
+/*for "Don't" boxes*/
+.negativeColour {background-color: $negativeColour;}
+
+/*borders*/
+.borderColour {border-color: $lineColour;}
+
+/*body links*/
+.moreInfoLinkColour {color: $moreInfoLinkColour;}
 
 
 /* for smallest devices -------------------------------------*/
@@ -118,7 +126,7 @@
   }
   .guidanceBox img {margin: auto; max-height: 100px; max-width: 150px;}
   .guidanceBox p {margin: 10px; text-align: center;}
-  .guidanceBox a {text-align: center; text-decoration: none; cursor:pointer;}
+  .guidanceBox a {text-align: center; cursor:pointer;}
 
 .moreInfoLink {
   text-decoration: underline;

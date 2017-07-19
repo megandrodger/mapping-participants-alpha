@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /*main*/
+/*borders*/
 /*highlight*/
+/*for "Don't" boxes*/
+/*body links*/
 .container {
   position: relative;
   width: 100%;
@@ -143,6 +146,18 @@
 .secondaryColour {
   background-color: #f4f9fc; }
 
+/*for "Don't" boxes*/
+.negativeColour {
+  background-color: #e8f2f9; }
+
+/*borders*/
+.borderColour {
+  border-color: #E68B5A; }
+
+/*body links*/
+.moreInfoLinkColour {
+  color: #17405b; }
+
 /* for smallest devices -------------------------------------*/
 .homeLink {
   display: block;
@@ -225,7 +240,6 @@ img.titleFlexChild {
 
 .guidanceBox a {
   text-align: center;
-  text-decoration: none;
   cursor: pointer; }
 
 .moreInfoLink {

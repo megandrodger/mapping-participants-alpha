@@ -146,6 +146,18 @@
 .secondaryColour {
   background-color: #f4ede2; }
 
+/*for "Don't" boxes*/
+.negativeColour {
+  background-color: #f0e7d7; }
+
+/*borders*/
+.borderColour {
+  border-color: #E68B5A; }
+
+/*body links*/
+.moreInfoLinkColour {
+  color: #403118; }
+
 /* for smallest devices -------------------------------------*/
 .homeLink {
   display: block;
@@ -228,7 +240,6 @@ img.titleFlexChild {
 
 .guidanceBox a {
   text-align: center;
-  text-decoration: none;
   cursor: pointer; }
 
 .moreInfoLink {
@@ -769,3 +780,13 @@ body {
   line-height: 1.6;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
+
+.headerImage {
+  margin: 3.5rem 0 3.5rem 0;
+  background-image: url("../image/autismSpectrum/292.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  display: block; }

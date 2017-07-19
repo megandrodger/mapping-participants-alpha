@@ -146,6 +146,18 @@
 .secondaryColour {
   background-color: #dcf0ee; }
 
+/*for "Don't" boxes*/
+.negativeColour {
+  background-color: #b8e0dc; }
+
+/*borders*/
+.borderColour {
+  border-color: #F47738; }
+
+/*body links*/
+.moreInfoLinkColour {
+  color: #173633; }
+
 /* for smallest devices -------------------------------------*/
 .homeLink {
   display: block;
@@ -228,7 +240,6 @@ img.titleFlexChild {
 
 .guidanceBox a {
   text-align: center;
-  text-decoration: none;
   cursor: pointer; }
 
 .moreInfoLink {
