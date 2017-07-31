@@ -140,23 +140,23 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*main*/
 .mainColour {
-  background-color: #EDE2D0; }
+  background-color: #FBE1E1; }
 
 /*highlight*/
 .secondaryColour {
-  background-color: #f4ede2; }
+  background-color: #fef8f8; }
 
 /*for "Don't" boxes*/
 .negativeColour {
-  background-color: #f0e7d7; }
+  background-color: #fceaea; }
 
 /*borders*/
 .borderColour {
-  border-color: #E68B5A; }
+  border-color: #B58840; }
 
 /*body links*/
 .moreInfoLinkColour {
-  color: #403118; }
+  color: #690e0e; }
 
 /* for smallest devices -------------------------------------*/
 .homeLink {
@@ -774,13 +774,3 @@ body {
   line-height: 1.6;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
-
-.headerImage {
-  margin: 3.5rem 0 3.5rem 0;
-  background-image: url("../image/autismSpectrum/292.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100px;
-  height: 100px;
-  display: block; }

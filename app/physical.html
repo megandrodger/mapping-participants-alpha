@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Designing for accessibility</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600'
+  rel='stylesheet' type='text/css'>-->
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/physical.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../../dist/images/favicon.png">
+
+</head>
+
+  <body class="mainColour">
+
+  <div id="nav" class="container">
+    <nav class="row">
+        <div class="12 columns">
+          <a href="index.html"><h1 class="homeLink">Designing for accessibility</h1></a>
+        </div>
+    </nav>
+  </div>
+
+  <div id="main" class="container">
+
+    <div class="row">
+        <div class="ten columns titleFlexParent">
+          <h1 class="titleFlexChild pageTitle">Designing for users with
+            <b>physical or motor disabilities</b></h1>
+            <img class="titleFlexChild" src="image/physicalOrMotor/titleImage.svg">
+        </div>
+
+        <div class="two columns headerImage">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="six columns">
+
+            <div class="secondaryColour borderColour doDontHeader">
+              <h2><b>Do...</b></h2>
+            </div>
+
+            <div class="secondaryColour guidanceBox">
+              <img src="image/physicalOrMotor/largeYesClickArea.svg" alt="A symbol of a large clickable 'Yes' button.">
+              <p>make large clickable actions</p>
+              <a id="simpleColoursModalLink" href="#" data-a11y-dialog-show="simpleColoursModal" class="moreInfoLink moreInfoLinkColour">more information</a>
+            </div>
+
+            <div class="secondaryColour guidanceBox">
+                <img src="image/physicalOrMotor/neatFormFields.svg"
+                alt="image of separated out form fields with space in between">
+                <p>give form fields space</p>
+            </div>
+
+            <div class="secondaryColour guidanceBox" >
+                <img src="image/physicalOrMotor/tabKey.svg"
+                alt="an image of the tab key">
+                <p class="tip">design for keyboard or speech only use</p>
+            </div>
+
+            <div class="secondaryColour guidanceBox" >
+                <img src="image/physicalOrMotor/touchscreen.svg"
+                alt="image of a tablet with a touch icon">
+                <p class="tip flexChild">design with mobile and touchscreen in mind</p>
+            </div>
+
+            <div class="secondaryColour guidanceBox" >
+                <img src="image/physicalOrMotor/findAddressShortcut.svg"
+                alt="An example of a Postcode field with a button for the Find Address shortcut underneath">
+                <p class="tip flexChild">provide shortcuts</p>
+            </div>
+
+        </div>
+
+        <div class="six columns">
+
+            <div class="negativeColour borderColour doDontHeader">
+                <h2><b>Don't...</b></h2>
+            </div>
+
+            <div class="negativeColour guidanceBox" >
+                <img class="tip flexChild"
+                src="image/physicalOrMotor/smallClickAreaRadio.svg"
+                alt="Small radio button next to a label">
+                <p class="tip flexChild">demand precision</p>
+            </div>
+
+            <div class="negativeColour guidanceBox" >
+                <img class="tip flexChild" src="image/physicalOrMotor/bunchedInteractions.svg"
+                alt="an example of labels and fields all together in one block">
+                <p class="tip flexChild">bunch interactions together</p>
+            </div>
+
+            <div class="negativeColour guidanceBox" >
+                <img class="tip flexChild" src="image/physicalOrMotor/dynamicContent.svg"
+                alt="an image of buttons arranged in a pattern that has to be move between">
+                <p class="tip flexChild">make dynamic content that requires a lot of mouse movement</p>
+            </div>
+
+            <div class="negativeColour guidanceBox" >
+                <img class="tip flexChild" src="image/physicalOrMotor/timeoutMessage.svg"
+                alt="A session timeout message">
+                <p class="tip flexChild">have short time out windows</p>
+            </div>
+
+            <div class="negativeColour guidanceBox" >
+                <img class="tip flexChild" src="image/physicalOrMotor/addressFields.svg"
+                alt="Fields with an address label that forces the entry of every line of the address">
+                <p class="tip flexChild">tire users with lots of typing and scrolling</p>
+            </div>
+
+        </div>
+    </div>
+  </div>
+
+  <!-- MODALS ------------------------------------------------------------------------>
+
+  <!-- Simple Colours Modal----------------------------------------------------------->
+
+  <div class="dialog" id="simpleColoursModal" aria-hidden="true">
+
+    <div class="modal" data-a11y-dialog-hide></div>
+
+      <div role="dialog" class="secondaryColour modal-body" aria-labelledby="simpleColoursTitle" aria-describedby="simpleColoursDetail">
+
+        <a href="#" type="button" class="back" data-a11y-dialog-hide aria-label="Back" tabindex="-1">< back</a>
+
+        <img src="image/autismSpectrum/simpleColours.svg" alt="Simplified colour palette">
+        <h2 id=simpleColoursTitle ><strong>Do use simple colours</strong></h2>
+        <p id=simpleColoursDetail>People on the autistic spectrum may experience over-sensitivity to colours. It's advisable to usemuted colours with lower saturation and hues derived from nature e.g. off-whites, mauves, olive greens, blue-greys and burnt oranges.</p>
+
+        <a href="#" type="button" class="close" data-a11y-dialog-hide aria-label="Close">Close</a>
+
+      </div>
+  </div>
+
+  <!-- MODALS end------------------------------------------------->
+
+    <script type="text/javascript" src="js/modal.js"></script>
+
+    <script>
+    (function () {
+      document.addEventListener('DOMContentLoaded', function () {
+        var dialogEl = document.getElementById('simpleColoursModal');
+        var mainEl = document.getElementById('main');
+        var dialog = new window.A11yDialog(dialogEl, mainEl);
+        dialog.on('show', function (dialogEl, triggerEl) {
+          console.log(dialogEl);
+          console.log(triggerEl);
+        });
+        // To manually control the dialog:
+        // dialog.show()
+        // dialog.hide()
+        // dialog.destroy()
+      });
+    }());
+    </script>
+
+  </body>
+
+</html>
