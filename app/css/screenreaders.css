@@ -159,68 +159,44 @@
   color: #2f351e; }
 
 /* for smallest devices -------------------------------------*/
+/* Nav */
+@media (max-width: 400px) {
+  body {
+    margin: 0; } }
+
+.homeTitle {
+  margin: 10px 10px 40px 10px; }
+
 .homeLink {
   display: block;
   color: #000000;
   text-align: left;
-  margin: 1rem 1.8rem;
-  font-size: 2.5rem;
+  margin: 2rem 1rem 1rem 1rem;
   text-decoration: underline; }
-
-.pageTitle {
-  font-size: 4.5rem; }
-
-.doDontHeader {
-  text-align: center;
-  border-style: solid;
-  border-width: 0 0 4px 0;
-  padding: 2%;
-  z-index: 1;
-  transition-property: background-color;
-  transition-duration: 0.2s;
-  -webkit-transition-property: background-color;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-property: background-color;
-  -moz-transition-duration: 0.2s;
-  -o-transition-property: background-color;
-  -o-transition-duration: 0.2s; }
-
-.doDontHeader.fixed {
-  top: 0;
-  position: fixed;
-  width: 96%;
-  z-index: 0;
-  transition-property: background-color;
-  transition-duration: 0.2s;
-  -webkit-transition-property: background-color;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-property: background-color;
-  -moz-transition-duration: 0.2s;
-  -o-transition-property: background-color;
-  -o-transition-duration: 0.2s; }
-
-.doDontHeader.fixed.absolute {
-  position: absolute; }
-
-.guidanceBox img {
-  margin: 5rem;
-  max-height: 20rem; }
 
 /* Sizing for page title */
 .titleFlexParent {
   display: flex;
-  margin: 1.8rem 0 1.8rem 0; }
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  margin: 2rem 0 3rem 0; }
 
 .titleFlexChild {
-  margin: 0 2rem 0 2rem; }
+  width: 70%; }
 
-img.titleFlexChild {
-  max-width: 10rem;
-  max-height: 7.6rem;
-  /*margin: 1.8rem;*/
-  flex: 0; }
+/* Column headers */
+.doDontHeader {
+  text-align: center;
+  border-style: solid;
+  border-width: 0 0 4px 0;
+  padding: 2%; }
 
-/* Sizing for individual guidance box */
+/* Guidance boxes */
+.guidanceBox img {
+  margin: 5rem;
+  max-height: 20rem; }
+
 .guidanceBox {
   display: flex;
   flex-flow: column;
@@ -228,19 +204,16 @@ img.titleFlexChild {
   margin: 15px;
   padding: 15px;
   height: 180px; }
-
-.guidanceBox img {
-  margin: auto;
-  max-height: 100px;
-  max-width: 150px; }
-
-.guidanceBox p {
-  margin: 10px;
-  text-align: center; }
-
-.guidanceBox a {
-  text-align: center;
-  cursor: pointer; }
+  .guidanceBox img {
+    margin: auto;
+    max-height: 100px;
+    max-width: 150px; }
+  .guidanceBox p {
+    margin: 10px;
+    text-align: center; }
+  .guidanceBox a {
+    text-align: center;
+    cursor: pointer; }
 
 .moreInfoLink {
   text-decoration: underline; }
@@ -249,37 +222,16 @@ img.titleFlexChild {
 .picturebox {
   flex-flow: column;
   text-align: center;
-  margin-top: 30px; }
+  margin-bottom: 40px; }
+  .picturebox img {
+    max-width: 90%;
+    max-height: 200px; }
+  .picturebox a {
+    margin-top: 0;
+    display: block;
+    color: black; }
 
-/* Modals */
-/* Javascript Modal -----------------
-
-.modal {
-    display: none; /* Hidden by default */
-/*position: fixed; /* Stay in place */
-/*z-index: 1; /* Sit on top */
-/*left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-/*height: 100%; /* Full height */
-/*overflow: auto; /* Enable scroll if needed */
-/*background-color: rgba(0,0,0,0.4); /* Black w/ opacity*/
-/*}
-
-/* Modal Content/Box */
-/*.modal-content {
-    position: fixed;
-    /*margin: auto;
-    width: 90%;
-    height: 90%;*/
-/*top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 5%;
-    width: 80%;
-}
-
-/* CSS Modal ----------------------------------*/
+/* CSS Modal -------------------------------------------------*/
 /*Greying out the background*/
 .dialog {
   z-index: 0;
@@ -289,26 +241,13 @@ img.titleFlexChild {
   left: 0;
   bottom: 0;
   right: 0;
-  /*position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0,0,0,0.4);
-	z-index: 99999;*/
   -webkit-transition: opacity 150ms ease-in;
   -moz-transition: opacity 150ms ease-in;
-  transition: opacity 150ms ease-in;
-  /*pointer-events: none;
-  overflow: auto;*/ }
+  transition: opacity 150ms ease-in; }
 
 .dialog[aria-hidden="true"] {
   display: none; }
 
-/*.modal:target {
-	opacity:1;
-	pointer-events: auto;
-}*/
 .modal-body {
   z-index: 3;
   position: fixed;
@@ -318,7 +257,6 @@ img.titleFlexChild {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 80%;
-  /*position: relative;*/
   padding: 5%; }
 
 .modal-body h2 {
@@ -354,36 +292,23 @@ img.titleFlexChild {
   text-decoration: none;
   cursor: pointer; }
 
-/* for larger devices -----------------------------------*/
-@media (min-width: 400px) {
-  a.homeLink {
-    display: block;
-    color: #000000;
-    text-align: left;
-    font-size: 2rem;
-    margin: 1rem 0 0 1.8rem; }
+/* for devices wider than a phablet -------------------------------------*/
+@media (min-width: 750px) {
+  .homeTitle {
+    margin: 40px 0; }
+  .homeLink {
+    font-size: 3rem;
+    margin: 2rem 1rem 0 1rem;
+    padding: 0; }
   .titleFlexParent {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 3.5rem 0 3.5rem 0; }
-  h1.titleFlexChild {
-    flex: 0 60%; }
-  img.titleFlexChild {
-    max-width: 270rem;
-    max-height: 10rem;
-    flex: 0; }
-  .doDontHeader {
-    text-align: center;
-    border-style: solid;
-    border-width: 0 0 4px 0;
-    /*margin: 2%;*/ }
+    margin: 3rem; }
   .modal-body {
-    width: 50%;
-    padding: 3%; }
-  .modal-body p {
-    padding: 0 5%; } }
+    width: 50%; }
+  .picturebox img {
+    max-width: 70%;
+    max-height: 70%; }
+  .needsLink {
+    font-size: 2.7rem; } }
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -456,7 +381,7 @@ h6 {
     font-size: 1.5rem; } }
 
 p {
-  /*margin: 0 2rem 1rem 2rem;*/ }
+  margin: 0 2rem 1rem 2rem; }
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
