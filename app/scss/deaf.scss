@@ -1,6 +1,6 @@
 //styles.scss
 
-@import "colours/autismColours";
+@import "colours/deafColours";
 @import "partials/deviceSizes";
 @import "partials/grid";
 @import "partials/skeleton";
@@ -8,7 +8,7 @@
 
 .headerImage {
   margin: 1rem 0 1rem 0;
-  background-image: url("../image/autismSpectrum/292.png");
+  background-image: url("../image/deafHardofHearing/titleImage.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

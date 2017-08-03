@@ -699,3 +699,20 @@ body {
   line-height: 1.6;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
+
+.headerImage {
+  margin: 1rem 0 1rem 0;
+  background-image: url("../image/lowVision/titleImage.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  display: inline; }
+
+@media (min-width: 550px) {
+  .headerImage {
+    margin: 3.5rem 0 3.5rem 0;
+    width: 100px;
+    height: 100px;
+    display: block; } }
