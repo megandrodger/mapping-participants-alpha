@@ -185,6 +185,13 @@
 .titleFlexChild {
   width: 70%; }
 
+/* Intro blurb */
+.intro {
+  margin: 0 0 3.6rem 0; }
+  .intro p {
+    font-size: 1.8rem;
+    margin-left: 0; }
+
 /* Column headers */
 .doDontHeader {
   text-align: center;
@@ -380,9 +387,8 @@ h6 {
   h6 {
     font-size: 1.5rem; } }
 
-p {
-  margin: 0 2rem 1rem 2rem; }
-
+/*p {
+margin: 0 2rem 1rem 2rem;}*/
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {

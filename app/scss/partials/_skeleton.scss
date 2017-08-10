@@ -79,6 +79,13 @@
   width: 70%;
 }
 
+/* Intro blurb */
+
+.intro {
+  margin: 0 0 3.6rem 0;
+  p{font-size: 1.8rem; margin-left: 0;}
+}
+
 /* Column headers */
 
 .doDontHeader {
@@ -245,8 +252,8 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
   h6 { font-size: 1.5rem; }
 }
 
-p {
-margin: 0 2rem 1rem 2rem;}
+/*p {
+margin: 0 2rem 1rem 2rem;}*/
 
 
 /* Links
