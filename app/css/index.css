@@ -174,7 +174,7 @@
   margin: 2rem 1rem 1rem 1rem;
   text-decoration: underline; }
 
-/* Sizing for page title */
+/* Page title */
 .titleFlexParent {
   display: flex;
   align-items: center;
@@ -184,6 +184,22 @@
 
 .titleFlexChild {
   width: 70%; }
+
+.headerImage {
+  margin: 1rem 0 1rem 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  display: inline; }
+
+/* Intro blurb */
+.intro {
+  margin: 0 0 3.6rem 0; }
+  .intro p {
+    font-size: 1.8rem;
+    margin-left: 0; }
 
 /* Column headers */
 .doDontHeader {
@@ -308,7 +324,13 @@
     max-width: 70%;
     max-height: 70%; }
   .needsLink {
-    font-size: 2.7rem; } }
+    font-size: 2.7rem; }
+  .headerImage {
+    background-size: contain;
+    margin: 3.5rem 0 3.5rem 0;
+    width: 100px;
+    height: 100px;
+    display: block; } }
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -380,9 +402,8 @@ h6 {
   h6 {
     font-size: 1.5rem; } }
 
-p {
-  margin: 0 2rem 1rem 2rem; }
-
+/*p {
+margin: 0 2rem 1rem 2rem;}*/
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {

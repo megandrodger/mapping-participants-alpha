@@ -174,7 +174,7 @@
   margin: 2rem 1rem 1rem 1rem;
   text-decoration: underline; }
 
-/* Sizing for page title */
+/* Page title */
 .titleFlexParent {
   display: flex;
   align-items: center;
@@ -184,6 +184,15 @@
 
 .titleFlexChild {
   width: 70%; }
+
+.headerImage {
+  margin: 1rem 0 1rem 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  display: inline; }
 
 /* Intro blurb */
 .intro {
@@ -315,7 +324,13 @@
     max-width: 70%;
     max-height: 70%; }
   .needsLink {
-    font-size: 2.7rem; } }
+    font-size: 2.7rem; }
+  .headerImage {
+    background-size: contain;
+    margin: 3.5rem 0 3.5rem 0;
+    width: 100px;
+    height: 100px;
+    display: block; } }
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -706,19 +721,5 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
 
-.headerImage {
-  margin: 1rem 0 1rem 0;
-  background-image: url("../image/deafHardOfHearing/titleImage.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 50px;
-  height: 50px;
-  display: inline; }
-
-@media (min-width: 550px) {
-  .headerImage {
-    margin: 3.5rem 0 3.5rem 0;
-    width: 100px;
-    height: 100px;
-    display: block; } }
+#deaf-header-image {
+  background-image: url("../image/deafHardOfHearing/titleImage.svg"); }

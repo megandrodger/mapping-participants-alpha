@@ -6,23 +6,6 @@
 @import "partials/skeleton";
 @import "partials/typography";
 
-.headerImage {
-  margin: 1rem 0 1rem 0;
-  background-image: url("../image/deafHardofHearing/titleImage.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 50px;
-  height: 50px;
-  display: inline;
+#deaf-header-image {
+  background-image: url("../image/deafHardOfHearing/titleImage.svg");
   }
-
-@media (min-width: $phablet-width) {
-
-.headerImage {
-  margin: 3.5rem 0 3.5rem 0;
-  width: 100px;
-  height: 100px;
-  display: block;
-  }
-}
