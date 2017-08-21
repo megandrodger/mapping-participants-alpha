@@ -158,6 +158,10 @@
 .moreInfoLinkColour {
   color: #173633; }
 
+/*nav links*/
+.navBarColour {
+  background-color: #dcf0ee; }
+
 /* for smallest devices -------------------------------------*/
 /* Nav */
 @media (max-width: 400px) {
@@ -171,8 +175,17 @@
   display: block;
   color: #000000;
   text-align: left;
-  margin: 2rem 1rem 1rem 1rem;
   text-decoration: underline; }
+
+/* Nav link */
+.navBar {
+  display: inline;
+  justify-content: space-between;
+  padding: 0rem 4rem 2rem;
+  margin: 2rem 0 3rem 0; }
+  .navBar img {
+    max-height: 50px;
+    max-width: 50px; }
 
 /* Page title */
 .titleFlexParent {
@@ -317,7 +330,7 @@
     margin: 2rem 1rem 0 1rem;
     padding: 0; }
   .titleFlexParent {
-    margin: 3rem; }
+    margin: 0rem; }
   .modal-body {
     width: 50%; }
   .picturebox img {
@@ -675,7 +688,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500; }
 
 h1 {
-  font-size: 2.0rem; }
+  font-size: 2.9rem; }
 
 h2 {
   font-size: 1.9rem; }
