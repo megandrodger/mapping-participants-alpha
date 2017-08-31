@@ -1,14 +1,18 @@
 @mixin standardHeader {
   margin: 0;
   line-height: 1.3;
-  letter-spacing: -0.1rem;
+  letter-spacing: 0rem;
   font-weight: 500;
+}
+
+.categorybox {
+  letter-spacing: 0rem;
 }
 
 /* Default smallest */
 h1,h2,h3,h4,h5,h6 { @include standardHeader; }
 h1 { font-size: 2.0rem; }
-h2 { font-size: 1.9rem; }
+h2 { font-size: 2.0rem; }
 h3 { font-size: 1.5rem; }
 h4 { font-size: 2.4rem; }
 h5 { font-size: 1.8rem; }
@@ -23,6 +27,12 @@ h6 { font-size: 1.5rem; }
   h5 { font-size: 2.4rem; }
   h6 { font-size: 1.5rem; }
 }
+
+
+p {
+margin: 0 2rem 1rem 2rem;}
+
+
 
 /* Styles -----------------------------
 

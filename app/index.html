@@ -34,76 +34,111 @@
 <div id="nav" class="container">
 
     <nav class="row">
-      <!--<div class="twelve columns titleFlexParent">-->
-        <h1 class="titleFlexChild homeTitle">Designing for<br><strong style="font-size: 150%;"> accessibility</strong></h1></a>
-      <!--</div>-->
+  <div class="nine columns">
+        <h1 class="titleFlexChild homeTitle"><strong style="font-size: 150%;">Digital Inclusion Categories</strong></h1></a>
+    </div>
+    <div class="three columns linkbox">
+      <a class="needsLink" href="#"><h2>Enter a participant</h2></a>
+    </div>
+
     </nav>
 
 <div class="row">
 
-    <div class="six columns picturebox">
-      <img src="image/indexImages/Image_01.svg">
-      <a class="needsLink" href="autism.html">autistic<br>spectrum</a>
+    <div class="four columns categorybox">
+      <a id="simpleColoursModalLink" href="#" data-a11y-dialog-show="simpleColoursModal" class="needsLink moreInfoLinkColour"><h2>Category 1</br>Never have, never will</h2></a>
     </div>
 
-    <div class="six columns picturebox">
-      <img src="image/indexImages/Image_02.svg">
-      <a class="needsLink" href="screenreaders.html">screen<br>readers</a>
+    <div class="four columns categorybox">
+      <a class="needsLink" href="screenreaders.html"><h2>Category 2</br>Was online but no longer</h2></a>
     </div>
 
-</div>
-
-<div class="row">
-
-    <div class="six columns picturebox">
-      <img src="image/indexImages/Image_03.svg">
-      <a class="needsLink" href="#">dyslexia</a>
-    </div>
-
-    <div class="six columns picturebox">
-      <img src="image/indexImages/Image_04.svg">
-      <a class="needsLink" href="#">low vision</a>
+    <div class="four columns categorybox">
+      <a class="needsLink" href="screenreaders.html"><h2>Category 3</br>Willing but unable<h2></a>
     </div>
 
 </div>
 
 <div class="row">
 
-    <div class="six columns picturebox">
-      <img src="image/indexImages/Image_05.svg">
-      <a class="needsLink" href="#">physical or motor<br>disabilities</a>
+    <div class="four columns categorybox">
+      <a class="needsLink" href="#"><h2>Category 4</br>Reluctantly online</h2></a>
     </div>
 
-    <div class="six columns picturebox">
-      <img src="image/indexImages/Image_06.svg">
-      <a class="needsLink" href="#">deaf or hard of<br>hearing</a>
+    <div class="four columns categorybox">
+      <a class="needsLink" href="#"><h2>Category 5</br>Learning the ropes</h2></a>
+    </div>
+
+    <div class="four columns categorybox">
+      <a class="needsLink" href="#"><h2>Category 6</br>Task specific</h2></a>
     </div>
 
 </div>
 
 <div class="row">
 
-  <!--
-    <div class="one column">
-      <img src="image/4259.png">
+    <div class="four columns categorybox">
+      <a class="needsLink" href="#"><h2>Category 7</br>Basic skills</h2></a>
     </div>
 
-    <div class="one column">
-      <img src="image/4061.png">
+    <div class="four columns categorybox">
+      <a class="needsLink" href="#"><h2>Category 8</br>Confident</h2></a>
     </div>
 
-    <div class="three columns">
-      <img src="image/Creative Commons-04_opt.png">
+    <div class="four columns categorybox">
+      <a class="needsLink" href="#"><h2>Category 9</br>Expert</h2></a>
     </div>
--->
+
+</div>
+
+
+
 
   <div class="twelve columns">
 
-    <p><br>For more information contact:<br><a href="mailto:access@digital.homeoffice.gov.uk">access@digital.homeoffice.gov.uk</a></p>
+    <p><br>For more information see:<br><a href="https://www.gov.uk/government/publications/government-digital-inclusion-strategy/government-digital-inclusion-strategy">Digital Inclusion Strategy on gov.uk</a></p>
   </div>
 
 </div>
 
+<div class="dialog" id="simpleColoursModal" aria-hidden="true">
+
+  <div class="modal" data-a11y-dialog-hide></div>
+
+    <div role="dialog" class="secondaryColour modal-body" aria-labelledby="simpleColoursTitle" aria-describedby="simpleColoursDetail">
+
+      <a href="#" type="button" class="back" data-a11y-dialog-hide aria-label="Back" tabindex="-1">< back</a>
+
+      <img src="image/autismSpectrum/simpleColours.svg" alt="Simplified colour palette">
+      <h2 id=simpleColoursTitle ><strong>Do use simple colours</strong></h2>
+      <p id=simpleColoursDetail>People on the autistic spectrum may experience over-sensitivity to colours. It's advisable to usemuted colours with lower saturation and hues derived from nature e.g. off-whites, mauves, olive greens, blue-greys and burnt oranges.</p>
+
+      <a href="#" type="button" class="close" data-a11y-dialog-hide aria-label="Close">Close</a>
+
+    </div>
 </div>
+
+<script type="text/javascript" src="js/modal.js"></script>
+
+<script>
+(function () {
+  document.addEventListener('DOMContentLoaded', function () {
+    var dialogEl = document.getElementById('simpleColoursModal');
+    var mainEl = document.getElementById('main');
+    var dialog = new window.A11yDialog(dialogEl, mainEl);
+    dialog.on('show', function (dialogEl, triggerEl) {
+      console.log(dialogEl);
+      console.log(triggerEl);
+    });
+    // To manually control the dialog:
+    // dialog.show()
+    // dialog.hide()
+    // dialog.destroy()
+  });
+}());
+</script>
+
+
+
 
 </body>
